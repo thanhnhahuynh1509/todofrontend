@@ -1,0 +1,212 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {  
+    height: 100%;
+    background-color: #42333d;
+}
+
+body {
+    
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url(../images/bg4ws.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: grayscale(20%);
+}
+
+.work-spaces {
+    width: 28%;
+    border-radius: 10px;
+    margin-left: 10px;
+    float: left;
+    box-shadow: 0px 0px 5px black;
+    padding: 16px;
+}
+
+.todo-spaces {
+    width: 70%;
+    float: right;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px black;
+    padding: 16px;
+    margin-right: 10px;
+}
+
+.work-spaces,
+.todo-spaces {
+    display: inline-block;
+    min-height: 200px;
+    margin-top: 10px;
+    background-color: #ffffff82;
+}
+
+.work-spaces > h2 {
+    text-align: center;
+    font-weight: 400;
+    letter-spacing: 1.2px;
+    margin: 10px 0px;
+    text-shadow: -3px 5px 1px rgb(255, 184, 184);
+}
+.contain-btn-workspaces {
+    text-align: right;
+}
+
+.work-css {
+    margin-top: 25px;
+    text-align: right;
+}
+
+input[name="todo"],
+.content-work input[name="name"] {
+    display: block;
+    width: 100%;
+    font-size: 20px;
+    outline: none;
+    border: none;
+    padding: 0px 3px;
+    border-bottom: 1px solid gray;
+    background-color: transparent;
+    color:  rgb(37, 37, 37);
+}
+
+.btn-delete-workspaces,
+.btn-update-workspaces,
+.btn-redirect-todo,
+.btn-add-workspaces {
+    margin-top: 10px;
+    border: none;
+    background: none;
+}
+
+.icon-redirect,
+.icon-delete,
+.icon-update,
+.icon-plus {
+    padding: 5px;
+    color: rgb(0, 0, 0);
+    border-radius: 100rem;
+    margin: 0px 2px;
+    box-shadow: 0px 0px 2px black;
+    cursor: pointer;
+    transition: .4s;
+}
+
+.icon-redirect {
+    background-color: rgb(71, 71, 71);
+    color: white;
+}
+
+.icon-plus {
+    background-color: rgb(107, 253, 93);
+    color: white;
+}
+
+.icon-update {
+    background-color: rgb(242, 253, 93);
+    color: rgb(23, 107, 146);
+}
+
+.icon-delete {
+    background-color: rgb(255, 110, 110);
+    color: rgb(233, 255, 254);
+}
+
+.hover-btn:hover {
+    box-shadow: 0px 0px 5px black;
+}
+
+.main::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+/* TOsDOS */
+.todo-spaces {
+    text-align: center;
+}
+
+.todo-spaces > h2 {
+    font-weight: 400;
+    letter-spacing: 1.2px;
+    margin: 10px 0px;
+    color: gray;
+}
+
+.contain-btn-todos {
+    text-align: right;
+}
+
+.task-name {
+    padding: 10px;
+    color: gray;
+    font-size: 16px;
+    float: left;
+}
+
+.contain-btn-todos::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.btn-delete-todo,
+.btn-add-todo {
+    margin-top: 10px;
+    border: none;
+    background-color: #6bfd5d;
+    box-shadow: 0px 0px 2px rgb(82, 82, 82);
+    padding: 6px 20px;
+    cursor: pointer;
+    transition: .4s;
+    font-size: 14px;
+    font-weight: 800;
+    color: rgb(255, 255, 255);
+    border-radius: 6px;
+}
+
+.todo {
+    margin-top: 20px;
+    text-align: right;
+}
+
+.btn-delete-todo {
+    font-weight: 600;
+    font-size: 12px;
+    padding: 6px 15px;
+    background-color: #fd5d5d;
+}
+
+.hide {
+    display: none;
+}
+
+.text-transform-todo {
+    text-decoration: line-through;
+    opacity: .6;
+}
+
+@media (max-width: 1000px) {
+    .main {
+        text-align: center;
+    }
+
+    .work-spaces {
+        width: 80%;
+        float: none;
+        margin: 0;
+    }
+
+    .todo-spaces {
+        width: 80%;
+        float: none;
+        margin: 0;
+        margin-top: 10px;
+    }
+}

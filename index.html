@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todos</title>
+    <link rel="icon" href="./assets/images/logo2.png">
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    
+    <div class="main">
+        <h2>TODOS</h2>
+        <!-- Login -->
+
+        <div class="form-login for-log">
+            <p>Login form</p>
+            <span class="error-message"></span>
+            <div class="form-group">
+                <div class="input-form">
+                    <i class="fas fa-user icon"></i>
+                    <input type="text" name="username" placeholder="Username" autocomplete="off">
+                </div>
+                <span class="form-message"></span>
+            </div>
+
+            <div class="form-group">
+                <div class="input-form">
+                    <i class="fas fa-unlock icon"></i>
+                    <input type="password" name="password" placeholder="Password" autocomplete="off">
+                </div>
+                <span class="form-message"></span>
+            </div>
+
+            <div class="form-button">
+                <button class="login-btn login">Login</button>
+            </div>
+
+            <button class="btn-redirect rd-login"><i class="fas fa-arrow-right icon-redirect"></i></button>
+        </div>
+
+        <!-- Register -->
+        <div class="form-login for-res display-none-form">
+            <p>Register form</p>
+            <span class="success-message"></span>
+            <div class="form-group">
+                <div class="input-form">
+                    <i class="fas fa-user icon"></i>
+                    <input type="text" name="username" placeholder="Username" autocomplete="off">
+                </div>
+                <span class="form-message"></span>
+            </div>
+
+            <div class="form-group">
+                <div class="input-form">
+                    <i class="fas fa-unlock icon"></i>
+                    <input type="password" name="password" placeholder="Password" autocomplete="off">
+                </div>
+                <span class="form-message"></span>
+            </div>
+
+            <div class="form-button">
+                <button class="login-btn register">Register</button>
+            </div>
+
+            <button class="btn-redirect rd-register"><i class="fas fa-arrow-right icon-redirect"></i></button>
+        </div>
+    </div>
+
+    <script src="./assets/js/form.js"></script>
+
+</body>
+</html>
